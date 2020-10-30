@@ -1,0 +1,113 @@
+.motivations{
+    margin-top: 100px;
+    background: #ffffff;
+}
+.motivations .cinwaan{
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.motivations .m-dheji .m-left{
+    width: 70%;
+    padding: 10px;
+}
+.motivations .m-dheji .m-left h1{
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid #000;
+}
+
+
+.motivations .m-dheji .m-left img{
+    width: 80%;
+}
+.motivations .m-dheji .m-left .quot{
+   line-height: 2;
+   padding: 10px;
+}
+.motivations .m-dheji .m-left p{
+    font-size: 20px;
+}
+/*  */
+.motivations .m-dheji .m-right{
+    width: 70%;
+    padding: 15px;
+    text-align:left;
+    margin-left: 80px;
+}
+.motivations .m-dheji .m-right p{
+    font-size: 22px;
+}
+/* magac-sawir */
+
+.magac-sawir{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.magac-sawir .sawir-qor{
+    width: 50%;
+}
+.magac-sawir .sawir-qor img{
+    width: 100%;
+}
+
+/* social icons made with imgs */
+.contact-us{
+    background: white;
+    padding: 10px;
+    /* margin-left: 50px; */
+    text-align: center;
+
+}
+.contact-us h2{
+    font-family: serif;
+    font-size: 28px;
+    padding: 10px;
+    margin: 10px;
+}
+.contact-us p{
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 5px;
+}
+.social-icons{
+    padding: 10px;
+    margin: 10px;
+}
+.social-icons .cons img{
+    width: 30px;
+    height: 30px;
+    border-radius: 90%;
+}
+
+@media (max-width:900px){
+    .motivations .cinwaan{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    
+    .motivations .m-dheji .m-left{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .motivations .m-dheji .m-left img{
+        width: 100%;
+    }
+    
+    .motivations .m-dheji .m-right{
+        width: 100%;
+        padding: 15px;
+        text-align:left;
+        margin-left: 0px;
+    }
+    
+    
+}

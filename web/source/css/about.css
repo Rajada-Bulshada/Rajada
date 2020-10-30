@@ -1,0 +1,76 @@
+
+/* about */
+
+.kor{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: white;
+}
+.kor .sare{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.kor .sare img{
+    width: 250px;
+    border-radius: 90%;
+    border: 20px solid transparent;
+    background: rgb(3, 3, 47);
+}
+
+
+/* mdig */
+.kor .hoose{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.kor .hoose h2{
+    font-size: 40px;
+    color: green;
+}
+
+.kor .hoose p{
+    font-size: 27px;
+    padding: 20px;
+}
+
+.vision,.mission{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* media for about page */
+@media only screen and (max-width:900px){
+    .kor .sare img{
+        background: white;
+    }
+    /*  */
+    .kor .hoose h2{
+        font-size: 35px;
+        color: green;
+    }
+    
+    .kor .hoose p{
+        font-size: 25px;
+        padding: 20px;
+    }
+    
+    
+    
+}

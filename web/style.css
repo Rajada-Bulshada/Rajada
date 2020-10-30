@@ -1,0 +1,768 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(250, 250, 250);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: tomato;
+}
+
+.logo-text,
+.logo-text-1 {
+    font-size: 2em;
+    font-weight: 900;
+    background-image: url(source/imgs/Flag-gf-1.gif);
+    background-position: center center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px transparent;
+    -webkit-background-clip: text;
+}
+
+
+/* ogu weyn waxoo idil oo aan soo sameeyay */
+
+#main {
+    transition: 1.3s;
+}
+
+
+/* desktop navigation */
+
+.nav span a {
+    text-decoration: none;
+    padding: 0 10px;
+    border: 2px solid white;
+    border-radius: 5%;
+    width: 45px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    outline: 3px solid rgb(5, 5, 71);
+}
+
+.nav {
+    height: 60px;
+    /* background: rgb(4, 4, 49); */
+    background: rgb(7, 7, 37);
+    /* background: rgb(4, 58, 65); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    line-height: 2;
+}
+
+.nav #logo {
+    margin-top: 0;
+    margin-right: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo-text {
+    color: white;
+    margin-left: 10px;
+}
+
+.logo-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav #menu {
+    background: rgb(4, 4, 49);
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    width: 0;
+    height: 100%;
+    text-align: center;
+    transition: 1.3s;
+    padding-top: 5px;
+    margin-top: 60px;
+    border-top: 1px solid #ffff;
+}
+
+.nav #menu a {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #efefef;
+    text-decoration: none;
+    color: white;
+    transition: 1.3s;
+}
+
+.nav #menu a:hover {
+    background: #ccc;
+}
+
+
+/* mobile */
+
+.nav-phone span a {
+    text-decoration: none;
+    padding: 0 10px;
+    border: 2px solid white;
+    border-radius: 5%;
+    width: 45px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    outline: 3px solid rgb(5, 5, 71);
+}
+
+.nav-phone {
+    height: 60px;
+    /* background: rgb(4, 4, 49); */
+    background: rgb(7, 7, 37);
+    /* background: rgb(4, 58, 65); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    line-height: 2;
+    display: none;
+}
+
+.nav-phone #logo {
+    margin-top: 0;
+    margin-right: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-phone #menu-phone {
+    background: rgb(4, 4, 49);
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    width: 0;
+    height: 100%;
+    text-align: center;
+    transition: 1.3s;
+    padding-top: 5px;
+    margin-top: 60px;
+    border-top: 1px solid #ffff;
+    /* opacity: 0.8; */
+}
+
+.nav-phone #menu-phone a {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #efefef;
+    text-decoration: none;
+    color: white;
+    transition: 1.3s;
+}
+
+.nav-phone #menu-phone a:hover {
+    background: #ccc;
+    color: #000;
+}
+
+
+/* second nav for mobile*/
+
+
+/* media qry for navigations */
+
+@media (max-width:900px) {
+    .nav {
+        display: none;
+    }
+    .nav-phone {
+        display: block;
+    }
+}
+
+
+/* end of navigations pls their media qry */
+
+.toggle {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    font-size: 30px;
+}
+
+
+/* main content apart from navs */
+
+.container {
+    height: 55vh;
+    background-image: url(source/imgs/somalia-satin-table-flag-4737.jpg), linear-gradient(100deg, blue, red, gray);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .middle {
+    margin-top: 65px;
+    padding: 10px;
+    text-align: center;
+    line-height: 2;
+}
+
+.container .middle h1 {
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 10px 10px 8px rgb(0, 0, 0, 0.6);
+    color: black;
+}
+
+.container .middle p {
+    padding: 10px;
+    font-size: 21px;
+}
+
+.container .middle a {
+    color: #000;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+
+/* end container */
+
+.fix {
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.fix .mid-fix {
+    text-align: center;
+    padding: 10px;
+}
+
+.b-mot {
+    padding: 10px;
+}
+
+.fix .b-mot h1 {
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+.fix .b-mot p {
+    font-size: 22px;
+}
+
+.fix ol li {
+    font-size: 22px;
+    text-align: left;
+}
+
+
+/* contact */
+
+.contact {
+    height: 88.5vh;
+    background-image: url(../../imgs/natural.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    line-height: 3;
+    color: white;
+}
+
+.contact h1 {
+    border-bottom: 1px solid #000;
+}
+
+.contact form {
+    padding: 10px;
+}
+
+.contact form input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+.contact form textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    width: 250px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.contact form input[type=submit] {
+    background: green;
+    border-radius: 2px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    color: white;
+}
+
+.contact form input[type=submit]:hover {
+    border: 1px solid skyblue;
+}
+
+
+/* motive  */
+
+.motive {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.motive .dhiira {
+    background-image: url(../../imgs/flag-img-1.jpg);
+    height: 80vh;
+    width: 75%;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.motive .dhiira p {
+    border-top: 1px solid #ffffff;
+    /* color: white; */
+    font-size: 1.4em;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.motive .dhiira span {
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border-bottom: 0.3px solid #ffffff;
+}
+
+
+/*  */
+
+.motive-1 {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    line-height: 2;
+}
+
+.motive-1 .dhiira-1 {
+    background-image: url(../../imgs/kron.jpg);
+    height: 90vh;
+    /* background-attachment: fixed; */
+    width: 97%;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.motive-1 .dhiira-1 p {
+    font-size: 1.4em;
+    padding: 10px;
+    font-weight: 900;
+    background-image: url(source/imgs/kron.jpg);
+    background-position: center center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    -webkit-background-clip: text;
+}
+
+.motive-1 .dhiira-1 span {
+    color: white;
+    padding: 10px;
+}
+
+.motive-1 .dhiira-1 a {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.motive-1 .dhiira-1 a:hover {
+    color: white;
+}
+
+
+/* posts to study */
+
+.learn {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+/* footer */
+
+.footer {
+    /* background: rgb(3, 3, 47); */
+    background: rgb(7, 7, 37);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    color: #ccc;
+}
+
+.footer .social a {
+    padding: 10px;
+    color: #ccc;
+    appearance: none;
+    cursor: pointer;
+}
+
+.footer .social a:hover {
+    color: red;
+}
+
+.footer .text {
+    padding: 10px;
+}
+
+
+/* maincontent media qry */
+
+@media (max-width:900px) {
+    /* container */
+    .container .middle h1 {
+        font-size: 30px;
+        color: black;
+    }
+    .container .middle p {
+        font-size: 18px;
+    }
+    /* fix */
+    .fix .b-mot h1 {
+        font-size: 28px;
+    }
+    .fix .b-mot p {
+        font-size: 18px;
+    }
+    .fix ol li {
+        font-size: 22px;
+        text-align: left;
+    }
+    /* motive */
+    .motive .dhiira {
+        width: 100%;
+    }
+    .motive .dhiira p {
+        font-size: 1.1em;
+    }
+    .motive .dhiira span {
+        font-size: 18px;
+        width: 100%;
+    }
+    /* fix lists of li */
+    .fix .mid-fix ol li {
+        font-size: 18px;
+    }
+    /* contact form */
+    .contact h1 {
+        border-bottom: 1px solid #000;
+        font-size: 22px;
+    }
+    /* ssecont mative-1 */
+    .motive-1 .dhiira-1 {
+        height: 70vh;
+        width: 99%;
+        border-radius: 2px;
+    }
+    .motive-1 .dhiira-1 p {
+        font-size: 25px;
+    }
+    .motive-1 .dhiira-1 span {
+        color: wheat;
+    }
+    /* learning conttent */
+    .learn h1 {
+        font-size: 25px;
+    }
+    .learn .study .post {
+        width: 45%;
+    }
+    /* footer */
+    .footer {
+        font-size: 20px;
+    }
+    .footer .social a {
+        padding: 2px;
+    }
+}
+
+@media (max-width:504px) {
+    .logo-text,
+    .logo-text-1 {
+        font-size: 1.7em;
+        font-weight: 600;
+        -webkit-text-stroke: 1px transparent;
+    }
+    /* container */
+    .container .middle h1 {
+        font-size: 30px;
+        color: black;
+    }
+    .container .middle p {
+        font-size: 18px;
+    }
+    /* fix */
+    .fix .b-mot h1 {
+        font-size: 25px;
+    }
+    .fix .b-mot p {
+        font-size: 15.7px;
+    }
+    .fix ol li {
+        font-size: 25px;
+        text-align: left;
+    }
+    /* motive */
+    .motive .dhiira {
+        width: 100%;
+    }
+    .motive .dhiira p {
+        font-size: 1em;
+    }
+    .motive .dhiira span {
+        font-size: 16px;
+        width: 100%;
+    }
+    /* fix lists of li */
+    .fix .mid-fix ol li {
+        font-size: 15px;
+    }
+    /* contact form */
+    .contact h1 {
+        border-bottom: 1px solid #000;
+        font-size: 20px;
+    }
+    /* ssecont mative-1 */
+    .motive-1 .dhiira-1 {
+        height: 70vh;
+        width: 99%;
+        border-radius: 2px;
+    }
+    .motive-1 .dhiira-1 p {
+        font-size: 20px;
+    }
+    .motive-1 .dhiira-1 span {
+        font-size: 15px;
+    }
+    /* learing */
+    .learn .study {
+        width: 100%;
+        padding: 0;
+    }
+    .learn .study .post {
+        width: 100%;
+        padding: 10px;
+    }
+    .post-text {
+        font-size: 16px;
+    }
+    .learn h1 {
+        border-bottom: 1px solid #ccc;
+        font-size: 25px;
+    }
+    /* footer */
+    .footer {
+        font-size: 15px;
+    }
+    .footer .social a {
+        padding: 5px;
+    }
+}
+
+
+/* about */
+
+.la-xirir {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.la-xirir .dhig {
+    background: white;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 4px 8px rgb(0, 0, 0, 0.6);
+}
+
+.la-xirir .dhig img {
+    width: 50%;
+    height: 200px;
+}
+
+.la-xirir .dhig h1 {
+    border-bottom: 1px solid #000;
+}
+
+.la-xirir .dhig h2 {
+    border-bottom: 1px solid #000;
+}
+
+.la-xirir .dhig button {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    background: navy;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.la-xirir .dhig a {
+    text-decoration: none;
+    outline: none;
+    appearance: none;
+    color: white;
+    font-size: 16px;
+}
+
+.la-xirir .dhig button:hover {
+    background: rgb(4, 155, 4);
+    color: black;
+}
+
+.la-xirir .dhig .social {
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    margin: 5px;
+    transition: 1s;
+}
+
+.la-xirir .dhig .social.face {
+    color: blue;
+}
+
+.la-xirir .dhig .social.twit {
+    color: skyblue;
+}
+
+.la-xirir .dhig .social.whats {
+    color: green;
+}
+
+.la-xirir .dhig .social.face:hover {
+    color: white;
+    background: navy;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.la-xirir .dhig .social.twit:hover {
+    color: white;
+    background: skyblue;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.la-xirir .dhig .social.whats:hover {
+    color: white;
+    background: green;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+@media (max-width:600px) {
+    .la-xirir .dhig {
+        width: 100%;
+    }
+}
+
+
+/* before footer */
+
+
+/* social icons made with imgs */
+
+.contact-us {
+    background: white;
+    padding: 10px;
+    /* margin-left: 50px; */
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-family: serif;
+    font-size: 28px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact-us p {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.social-icons {
+    padding: 10px;
+    margin: 10px;
+}
+
+.social-icons .cons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 90%;
+}

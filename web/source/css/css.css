@@ -1,0 +1,174 @@
+.html{
+    padding: 50px;
+    background: white;
+    /* border: 1px solid rgb(184, 179, 179); */
+}
+/* sidebar */
+
+.nav-2 span a{text-decoration:none;
+    padding:0 10px;
+    border:2px solid white;border-radius: 5%;
+    width: 45px;
+    height: 40px;
+    background:transparent;color:black;outline: 3px solid rgb(5, 5, 71);}
+.nav-2{
+    position: fixed;
+    top: 0;
+}
+.nav-2 #logo-2 {
+    margin-top: 0;
+    margin-left: 10px;
+    position: absolute;
+    top: 80px;
+}
+.logo-text-2{
+    color: white;
+    margin-left: 10px;
+}
+.nav-2 #menu-2{
+    background: rgb(4, 4, 49);
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    width: 0;
+    height: 100%;
+    text-align: center;
+    transition: 1.3s;
+    padding-top: 5px;
+    margin-top: 60px;
+    border-top: 1px solid #ffff;
+}
+.nav-2 #menu-2 a{
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #efefef;
+    text-decoration: none;
+    color: white;
+    transition: 1.3s;
+    font-size: 19px;
+}
+.nav-2 #menu a:hover{
+    background: #ccc;
+}
+
+/*list  */
+#Naftaada , #shaqsiyad, #Dabeecad,
+#ladhaqan , #guusha, #guuldarada,
+#hogaamin{
+    display: none;
+}
+
+/* footer */
+/* media for sidebar */
+@media (max-width:900px){
+    .nav-2 #menu-2 a{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .ht-post-text{
+        font-size: 20px;
+    }
+}
+
+
+/* posts */
+.posts{
+    margin-top: 150px;
+    height: 100%;
+    /* width: 100%; */
+    margin-left: 50px;
+}
+
+
+.all-posts .ht-post{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.left{
+    padding: 10px;
+}.youtube{
+   /* border: 1px solid #000; */
+   text-align: center;
+   /* margin: 10px; */
+   padding: 10px;
+}
+.youtube  video{
+    /* height: 300px; */
+    width: 700px;
+    padding: 10px;
+}
+
+.ht-post-title{
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+.ht-post-text{
+    font-size: 24px;
+}
+
+/*  */
+.ht-post .pre{
+    padding: 10px;
+    width: 139px;
+    color: white;
+    background: rgb(230, 34, 34);
+    outline: none;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+}
+.ht-post button{
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.ht-post .next{
+    padding: 10px;
+    width: 139px;
+    color: white;
+    background: green;
+    outline: none;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    float: right;
+}
+.ht-post .pre:hover{
+    background: red;
+}.ht-post .next:hover{
+    background: rgb(4, 167, 4);
+}
+/*  */
+
+.left{
+    font-weight: 590;
+}
+/* mdeid */
+
+@media (max-width:900px){
+    .html{
+        padding: 0px;
+        background: white;
+        /* border: 1px solid rgb(184, 179, 179); */
+    }
+    
+    .one{
+    font-size: 28px;
+    }
+
+    .ht-post-text{
+        font-size: 20px;
+    }
+    
+    .youtube  video{
+        width: 100%;
+        padding: 8px;
+    }
+    
+}
