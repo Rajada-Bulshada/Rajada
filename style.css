@@ -198,15 +198,24 @@ a:hover {
     font-size: 30px;
 }
 
+.toggle a {
+    color: purple;
+}
+
+.toggle a:hover {
+    color: red;
+    ;
+}
+
 
 /* main content apart from navs */
 
 .container {
-    height: 55vh;
-    background-image: url(source/imgs/somalia-satin-table-flag-4737.jpg), linear-gradient(100deg, blue, red, gray);
+    height: 60vh;
+    background-image: url(source/imgs/Flag-gf-1.gif), linear-gradient(100deg, blue, red, gray);
     background-attachment: fixed;
     background-size: cover;
-    height: 100%;
+    /* height: 100%; */
     background-position: center center;
     justify-content: center;
     align-items: center;
@@ -234,10 +243,37 @@ a:hover {
     font-size: 21px;
 }
 
-.container .middle a {
+.container .middle .wah {
     color: #000;
     padding: 10px;
     border: 1px solid #000;
+}
+
+.container .middle .wah:hover {
+    background: navy;
+    color: white;
+}
+
+.soci-middle {
+    position: absolute;
+    right: 30px;
+    bottom: 280px;
+}
+
+.soci-middle a {
+    border: none;
+    float: right;
+    padding: 10px;
+    margin: 15px;
+    justify-content: space-around;
+    outline: none;
+    width: 10px;
+    border-bottom: none;
+    padding: 0;
+}
+
+.soci-middle a:hover {
+    color: red;
 }
 
 
@@ -282,16 +318,17 @@ a:hover {
 /* contact */
 
 .contact {
-    height: 88.5vh;
-    background-image: url(../../imgs/natural.jpg);
+    height: 100vh;
+    background-image: url(source/imgs/somalia-satin-table-flag-4737.jpg);
     background-size: cover;
     justify-content: center;
     align-items: center;
+    background-position: center center;
     display: flex;
     text-align: center;
     flex-direction: column;
     line-height: 3;
-    color: white;
+    color: black;
 }
 
 .contact h1 {
@@ -310,7 +347,7 @@ a:hover {
     width: 250px;
     text-align: center;
     background: transparent;
-    color: white;
+    color: black;
     font-size: 15px;
 }
 
@@ -321,7 +358,7 @@ a:hover {
     padding: 10px;
     width: 250px;
     background: transparent;
-    color: white;
+    color: black;
     font-size: 15px;
     text-align: center;
 }
@@ -484,6 +521,10 @@ a:hover {
     }
     .container .middle p {
         font-size: 18px;
+    }
+    .soci-middle {
+        top: 260px;
+        right: 15px;
     }
     /* fix */
     .fix .b-mot h1 {
@@ -722,6 +763,11 @@ a:hover {
     background: green;
     border-radius: 3px;
     padding: 6px;
+}
+
+.dhig iframe {
+    width: 100%;
+    height: 90%;
 }
 
 @media (max-width:600px) {
