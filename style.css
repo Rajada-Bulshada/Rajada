@@ -515,7 +515,7 @@ a:hover {
     /* container */
     .container .middle h1 {
         font-size: 30px;
-        color: black;
+        color: white;
     }
     .container .middle p {
         font-size: 18px;
@@ -525,7 +525,7 @@ a:hover {
         right: 16px;
     }
     .soci-middle a {
-        font-size: 16px;
+        font-size: 17px;
         margin: 10px;
     }
     /* fix */
@@ -595,9 +595,20 @@ a:hover {
         -webkit-text-stroke: 1px transparent;
     }
     /* container */
+    .container {
+        height: 60vh;
+        background-image: url(source/imgs/Flag-gf-1.gif), linear-gradient(100deg, blue, red, gray);
+        background-size: cover;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
     .container .middle h1 {
         font-size: 30px;
-        color: black;
+        color: white;
     }
     .container .middle p {
         font-size: 18px;
