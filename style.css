@@ -213,9 +213,7 @@ a:hover {
 .container {
     height: 60vh;
     background-image: url(source/imgs/Flag-gf-1.gif), linear-gradient(100deg, blue, red, gray);
-    background-attachment: fixed;
     background-size: cover;
-    /* height: 100%; */
     background-position: center center;
     justify-content: center;
     align-items: center;
