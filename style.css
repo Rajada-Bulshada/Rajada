@@ -526,6 +526,10 @@ a:hover {
         top: 260px;
         right: 15px;
     }
+    .soci-middle a {
+        font-size: 20px;
+        margin: 10px;
+    }
     /* fix */
     .fix .b-mot h1 {
         font-size: 28px;

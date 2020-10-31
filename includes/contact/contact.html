@@ -7,44 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rajada Bulshada</title>
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../source/css/fontawesome-free-5.8.2-web/css/all.min.css">
 
 </head>
 
 <body>
     <div id="main">
-        <!-- first nav is for desktop  -->
-        <div class="nav">
-            <h1 class="logo-text"><a href="../../index.html">Rajada Bulshada</a></h1>
-            <span id="logo">
+        <nav>
+            <!-- first nav is for desktop  -->
+            <div class="nav">
+                <h1 class="logo-text"><a href="../../index.html">Rajada Bulshada</a></h1>
+                <span id="logo">
             <a class="open" onclick="openmenu()"><i>=</i></a>
         </span>
 
-            <div id="menu">
-                <a onclick="closemenu()"><i>&times;</i></a>
-                <a href="../../index.html">Home</a>
-                <a href="../motivation/motive.html">Motivations</a>
-                <a href="../learn/learn.html">Learn</a>
-                <a href="../blog/blog.html">Blog</a>
-                <a href="../about/about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <div id="menu">
+                    <a onclick="closemenu()"><i>&times;</i></a>
+                    <a href="../../index.html">Home</a>
+                    <a href="../learn/html/html.html">Html</a>
+                    <a href="../learn/css/css.html">Css</a>
+                    <a href="../learn/dhiiragali/Inspire.html">motivations</a>
+                    <a href="../about/about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://www.youtube.com/channel/UCKmikmjcE8dtx_v8iNesN2g?view_as=subscriber" class="social youtube" style="color: red;"><i class="fab fa-youtube"></i></a>
+                    <a style="margin-bottom: 20px;"></a>
+                </div>
             </div>
-        </div>
-        <!-- second nav  for mobile-->
-        <div class="nav-phone">
-            <h1 class="logo-text"><a href="../../index.html">Rajada Bulshada</a></h1>
-            <span id="logo">
+            <!-- second nav  for mobile-->
+            <div class="nav-phone">
+                <h1 class="logo-text"><a href="../../index.html">Rajada Bulshada</a></h1>
+                <span id="logo">
                 <a class="open" onclick="phonemenu()"><i>&Congruent;</i></a>
             </span>
-            <div id="menu-phone">
-                <a onclick="clsmenu()"><i>&times;</i></a>
-                <a href="../../index.html">Home</a>
-                <a href="../motivation/motive.html">Motivations</a>
-                <a href="../learn/learn.html">Learn</a>
-                <a href="../blog/blog.html">Blog</a>
-                <a href="../about/about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <div id="menu-phone">
+                    <a onclick="clsmenu()"><i>&times;</i></a>
+                    <a href="../../index.html">Home</a>
+                    <a href="../learn/html/html.html">Html</a>
+                    <a href="../learn/css/css.html">Css</a>
+                    <a href="../learn/dhiiragali/Inspire.html">motivations</a>
+                    <a href="../about/about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://www.youtube.com/channel/UCKmikmjcE8dtx_v8iNesN2g?view_as=subscriber" class="social youtube" style="color: red;"><i class="fab fa-youtube"></i></a>
+                    <a style="margin-bottom: 20px;"></a>
+                </div>
             </div>
-        </div>
+        </nav>
         <!-- end  navigations-->
 
         <div class="contact" id="xiriir">
@@ -55,8 +62,14 @@
             <p>
                 <label for="phone">Email:</label> Cabdinaasirc15@gmail.com
             </p>
+            <div class="soci" style="padding: 10px; justify-content: space-around;font-size: 30px;">
+                <a href="https://www.facebook.com/abdinaasirstar15" class="social face" style="color: white;"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/RBulshada" class="social twit" style="color: skyblue;"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Rajada-Bulshada" class="social github" style="color: gray;"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCKmikmjcE8dtx_v8iNesN2g?view_as=subscriber" class="social youtube" style="color: red;"><i class="fab fa-youtube"></i></a>
+            </div>
 
-            <form action="#" method="POST">
+            <form action="../../index.html" id="far" method="POST" onsubmit="valid()">
                 <p>
                     <input type="text" name="" id="" placeholder="Enter full name">
                 </p>
@@ -74,11 +87,11 @@
     <div class="footer">
         <div class="social">
             <a href="../../index.html">Home</a>
-            <a href="../motivation/motive.html">Motivations</a>
-            <a href="../learn/learn.html">Learn</a>
-            <a href="../blog/blog.html">Blog</a>
+            <a href="../learn/html/html.html">Html</a>
+            <a href="../learn/css/css.html">Css</a>
+            <a href="../learn/dhiiragali/Inspire.html">motivations</a>
             <a href="../about/about.html">About</a>
-            <a href="../contact/contact.html">Contact</a>
+            <a href="contact.html">Contact</a>
         </div>
         <div class="text">
             <p> &copy; Right reserve in 2020 || by Rajada Bulshada</p>
@@ -93,7 +106,7 @@
 
     </div>
 
-    <script src="../../js/script.js"></script>
+    <script src="../../source/js/index.js"></script>
 </body>
 
 </html>
