@@ -1,5 +1,5 @@
 .html{
-    padding: 50px;
+    padding: 55px;
     background: white;
     /* border: 1px solid rgb(184, 179, 179); */
 }
@@ -71,7 +71,7 @@
     }
 }
 
-
+/* ugaar ah html file  */
 /* posts */
 .posts{
     margin-top: 150px;
@@ -93,7 +93,7 @@
 .left{
     padding: 10px;
 }.youtube{
-   /* border: 1px solid #000; */
+   border: 1px solid #000;
    text-align: center;
    /* margin: 10px; */
    padding: 10px;
@@ -149,13 +149,16 @@
 .left{
     font-weight: 590;
 }
+.left h2{
+    text-align: left;
+}
 /* mdeid */
 
 @media (max-width:900px){
     .html{
-        padding: 0px;
+        padding: 10px;
         background: white;
-        /* border: 1px solid rgb(184, 179, 179); */
+        border: 1px solid rgb(184, 179, 179);
     }
     
     .one{
@@ -171,4 +174,35 @@
         padding: 8px;
     }
     
+}
+
+
+/* for html */
+
+.img-hordhac{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-hordhac img{
+    width: 450p;
+}
+
+@media (max-width:900px){
+    .img-hordhac{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/* Live  coding for html */
+h1{
+color: white;
+background: rgb(3, 38, 70);
+padding: 10px;
+}
+h2{
+text-align: center;
+margin: 10px;
+color: green;
 }

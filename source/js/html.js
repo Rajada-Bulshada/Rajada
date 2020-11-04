@@ -123,3 +123,6 @@ function element() {
 //     document.getElementById('end').style.display = "none";
 //     document.getElementById('vid').style.display = "none";
 // }
+
+
+// for live coding

@@ -124,9 +124,7 @@ a:hover {
 
 .nav-phone {
     height: 60px;
-    /* background: rgb(4, 4, 49); */
     background: rgb(7, 7, 37);
-    /* background: rgb(4, 58, 65); */
     position: fixed;
     width: 100%;
     top: 0;
@@ -156,7 +154,6 @@ a:hover {
     padding-top: 5px;
     margin-top: 60px;
     border-top: 1px solid #ffff;
-    /* opacity: 0.8; */
 }
 
 .nav-phone #menu-phone a {
@@ -403,7 +400,6 @@ a:hover {
 
 .motive .dhiira p {
     border-top: 1px solid #ffffff;
-    /* color: white; */
     font-size: 1.4em;
     padding: 10px;
     font-weight: 900;
@@ -433,7 +429,6 @@ a:hover {
 .motive-1 .dhiira-1 {
     background-image: url(../../imgs/kron.jpg);
     height: 90vh;
-    /* background-attachment: fixed; */
     width: 97%;
     border-radius: 6px;
     background-size: cover;
@@ -485,17 +480,16 @@ a:hover {
 /* footer */
 
 .footer {
-    /* background: rgb(3, 3, 47); */
-    background: rgb(7, 7, 37);
+    background: rgb(245, 241, 241);
     padding: 10px;
     text-align: center;
     width: 100%;
-    color: #ccc;
+    color: black;
 }
 
 .footer .social a {
     padding: 10px;
-    color: #ccc;
+    color: tomato;
     appearance: none;
     cursor: pointer;
 }
@@ -690,7 +684,9 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-
+.ht-post-text h2{
+    text-align: start;
+}
 .la-xirir .dhig {
     background: white;
     width: 350px;
