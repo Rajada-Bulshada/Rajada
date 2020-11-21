@@ -1,5 +1,6 @@
 .html {
     padding: 55px;
+    margin-left: 300px;
     background: white;
     /* border: 1px solid rgb(184, 179, 179); */
 }
@@ -36,13 +37,14 @@
 }
 
 .nav-2 #menu-2 {
-    background: rgb(4, 4, 49);
+    /* background: rgb(4, 4, 49); */
+    background: rgb(235, 235, 243);
     position: fixed;
     left: 0;
     top: 0;
-    overflow-x: hidden;
-    width: 0;
-    /* height: 100%; */
+    overflow-x: scroll;
+    width: 300px;
+    height: 100%;
     text-align: center;
     transition: 1.3s;
     padding-top: 5px;
@@ -50,17 +52,48 @@
     border-top: 1px solid #ffff;
 }
 
-.nav-2 #menu-2 a {
+.nav-2 #menu-3 {
+    display: none;
+    /* background: rgb(4, 4, 49); */
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: scroll;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    transition: 1.3s;
+    padding-top: 5px;
+    margin-top: 60px;
+    border-top: 1px solid #ffff;
+}
+
+.nav-2 #menu-3 a {
     display: block;
     padding: 20px;
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #ccc;
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 1.3s;
     font-size: 19px;
 }
 
-.nav-2 #menu a:hover {
+.nav-2 #menu-3 a:hover {
+    background: #ccc;
+}
+
+.nav-2 #menu-2 a {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #aaa5a5;
+    text-decoration: none;
+    color: black;
+    transition: 1.3s;
+    font-size: 19px;
+}
+
+.nav-2 #menu-2 a:hover {
     background: #ccc;
 }
 
@@ -81,10 +114,28 @@
 /* media for sidebar */
 
 @media (max-width:900px) {
-    .nav-2 #menu-2 a {
+    .html {
+        padding: 0px;
+        margin-left: 0px;
+        background: white;
+        /* border: 1px solid rgb(184, 179, 179); */
+    }
+    .nav-2 #menu-2 {
+        display: none;
+    }
+    .nav-2 #menu-3 {
+        display: block;
+        width: 0;
+    }
+    .nav-2 #menu-3 a {
+        /* display: block; */
         padding: 10px;
         font-size: 18px;
     }
+    /* .nav-2 #menu-3 a {
+        padding: 10px;
+        font-size: 18px;
+    } */
     .ht-post-text {
         font-size: 18px;
     }
