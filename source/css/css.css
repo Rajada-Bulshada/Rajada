@@ -107,6 +107,11 @@
     display: none;
 }
 
+#element,
+#tusmo {
+    display: none;
+}
+
 
 /* footer */
 
@@ -170,9 +175,10 @@
 
 .youtube {
     border: 1px solid #000;
-    text-align: center;
+    text-align: left;
     /* margin: 10px; */
     padding: 10px;
+    width: 100%;
 }
 
 .youtube video {
@@ -184,6 +190,36 @@
     height: 300px;
     width: 700px;
     padding: 10px;
+}
+
+.yar {
+    width: 100%;
+    font-size: 14px;
+    line-height: 2;
+    overflow: hidden;
+    height: 100px;
+    resize: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    color: black;
+    font-weight: 900;
+    text-align: left;
+}
+
+.youtube textarea {
+    width: 100%;
+    font-size: 14px;
+    line-height: 2;
+    overflow: hidden;
+    height: 400px;
+    resize: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    color: black;
+    font-weight: 900;
+    text-align: left;
 }
 
 .ht-post-title {
@@ -266,6 +302,11 @@
         width: 100%;
         padding: 8px;
     }
+    .youtube textarea {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1;
+    }
 }
 
 
@@ -300,4 +341,18 @@ h2 {
     text-align: center;
     margin: 10px;
     color: green;
+}
+
+
+/* miis */
+
+.miis {
+    padding: 10px;
+    border: 1px solid #000;
+    min-width: 100%;
+    height: 300px;
+}
+
+.miis tbody tr {
+    margin: 10px;
 }
